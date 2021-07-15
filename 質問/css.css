@@ -1,0 +1,36 @@
+.tell {
+  background-color: aquamarine;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 30px;
+  position: relative;
+  margin: 100px auto;
+  display: block;
+}
+
+.tell::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  background: url(img/mail.svg) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+}
+
+.tell::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  background: url(img/download__icon.svg) no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  transform: translate(0, -50%);
+}
